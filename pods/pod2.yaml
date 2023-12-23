@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod2
+  namespace: default
+  labels:
+    sticker: puma
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx 
+    ports:
+      - containerPort: 80
+    
